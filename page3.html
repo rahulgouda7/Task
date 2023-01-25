@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>File Type And Size Validation</title>
+	<style type="text/css">
+		p {
+			color: red;
+		}
+		label {
+			font-family: cursive;
+			color: #800000;
+			font-size: large;
+			font-weight: 900;
+		}
+		div {
+			justify-content: center;
+			padding-top: 160px;
+			padding-left: 400px;
+		}
+		table {
+			padding: 20px;
+			border: 5px solid black;
+		}
+		body {
+			background-color: #cfe0fa/*#20B2AA*/;
+		}
+		h1{
+			font-size: 25px;
+    		line-height: 30px;
+    		color: rgb(4, 4, 4);
+		}
+		#sub{
+			align-content: center;		
+		}	
+	</style>
+</head>
+<body>
+	<div class="div">
+		<h1>UPLOAD YOUR FILE HERE</h1>
+		<form action="page4.html" name="myForm" method="post" onsubmit="return page3Validation()" ;>
+		<table>
+			<tr>
+				<td>
+					<label>Recent Passport Size Photograph :</label><input type="file" id="file1" onchange="return page3Validation('file1','size1');"><br>
+					<p id="size1"></p>
+					<label>HSC Marksheet :</label><input type="file" id="file2" onchange="return page3Validation('file2','size2');"><br>
+					<p id="size2"></p>
+					<label>SSC Marksheet :</label><input type="file" id="file3" onchange="return page3Validation('file3','size3');">
+					<p id="size3"></p>
+					<label>All Semester Marks :</label><input type="file" id="file4" onchange="return page3Validation('file4','size4');">
+					<p id="size4"></p>
+                    <input type="submit" value="submit"  style="border-radius: 2px; padding: 8px;">
+				</td>
+			</tr>
+		</table>
+		</form>
+		<script type="text/javascript" src="fileValidation.js"></script>	
+	</div>	
+</body>
+</html>

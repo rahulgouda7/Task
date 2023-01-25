@@ -1,0 +1,14 @@
+table {
+    height: 650px;
+    background-color: #cfe0fa;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+.required {
+    color: red; font-weight:bold;
+}
+input,select{
+    border-radius: 3px;
+    padding: 8px;
+}

@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Student Registration Form</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="fileValidation.js"></script>
+    </head>
+    <body>
+         <center>
+            <table align="center" height="650" bgcolor="#cfe0fa"> 
+            <form action="page3.html" name="myForm" method="post" onsubmit="return page2Validation();">
+            <th align="Center"><h2>Educational Details</h2></th>
+            <tr>
+                <td>HSC Institution Name<span style="color: red; font-weight:bold;">*</span><br>
+                <input type="text" name="h_iname" style="width: 410;" autofocus> </td>
+            </tr>
+            <tr>   
+                <td>HSC Board<span style="color: red; font-weight:bold;">*</span> <br>
+                    <select  name="h_board" style="width: 410;"  >
+                        <option value="">Select</option>
+                        <option value="option1">CBSC</option>
+                        <option value="option2">ICSC</option>
+                        <option value="option3">State Board</option>
+                        <option value="option4">Others</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Score in HSC in Percentage<span style="color: red; font-weight:bold;">*</span> <br>
+                <input type="text" name="h_per" style="width: 410;"> </td>
+            </tr>
+            <tr>
+                <td>SSC Institution Name<span style="color: red; font-weight:bold;">*</span> <br>
+                <input type="text" name="s_iname" style="width: 410;"> </td>
+            </tr> 
+            <tr>   
+                <td>SSC Board<span style="color: red; font-weight:bold;">*</span> <br>
+                    <select  name="s_board" style="width: 410;"  >
+                        <option value="">Select</option>
+                        <option value="option1">CBSC</option>
+                        <option value="option2">ICSC</option>
+                        <option value="option3">State Board</option>
+                        <option value="option4">Others</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Score in SSC in Percentage<span style="color: red; font-weight:bold;">*</span> <br>
+                <input type="text" name="s_per" style="width: 410;"> </td>
+            </tr>
+            <tr>   
+                <td>Currently Pursuing<span style="color: red; font-weight:bold;">*</span> <br>
+                    <select name="curr_pur" style="width: 410;">
+                        <option value="">Select</option>
+                        <option value="option1">B.Sc</option>
+                        <option value="option2">B.Tech</option>
+                        <option value="option3">BCA</option>
+                        <option value="option4">MCA</option>
+                        <option value="option5">MBA</option>
+                        <option value="option6">M.Tech</option>
+                        <option value="option7">Others</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Currently Educational Institution Name<span style="color: red; font-weight:bold;">*</span> <br>
+                <input type="text" name="current_iname" style="width: 410;"> </td>
+            </tr>
+            <tr>
+                <td>Overall Percentage<span style="color: red; font-weight:bold;">*</span> <br>
+                <input type="text" name="ovr_per" style="width: 410;"> </td>
+            </tr>
+            <tr>
+                <td>Current Backlogs If Any<span style="color: red; font-weight:bold;">*</span> <br>
+                <input type="radio" name="bck"> Yes <br>
+                <input type="radio" name="bck"> No </td>
+            </tr>
+            <tr>
+                <td align="Center"><input type="submit" value="NEXT>>" formaction="page3.html" ></td> 
+            </tr>
+            </form> 
+        </table>
+    </center>
+     </body>
+</html>
